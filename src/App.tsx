@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './contexts/ThemeContext';
 import NAVBAR from './components/navbar';
 import HomePage from './pages/Home';
@@ -9,7 +9,7 @@ import './index.css';
 function App() {
   return (
     <ThemeProvider>
-      <Router basename={import.meta.env.BASE_URL}>
+      <Router>
         <NAVBAR />
         <Routes>
           <Route path="/" element={<HomePage />} />

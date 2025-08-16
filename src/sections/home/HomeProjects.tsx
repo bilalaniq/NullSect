@@ -5,7 +5,7 @@
 import ns_logo from '../../assets/NUllsect.jpeg';
 
 // custom components
-import Project from '../../components/Project';
+import Project from '../../components/project';
 import { useTheme } from '../../contexts/ThemeContext';
 import { SimpleGrid } from '@chakra-ui/react';
 
